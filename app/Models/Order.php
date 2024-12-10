@@ -13,6 +13,7 @@ class Order extends Model
         'user_id',
         'grand_total',
         'payment_method',
+        'payment_status',
         'status',
         'currency',
         'shipping_amount',
@@ -25,7 +26,7 @@ class Order extends Model
     }
 
     public function items() {
-        return $this->hasMany(orderitem::class);
+        return $this->hasMany(orderItem::class);
     }
 
     public function address() {

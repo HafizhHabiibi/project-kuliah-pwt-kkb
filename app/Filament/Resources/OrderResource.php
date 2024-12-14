@@ -57,8 +57,8 @@ class OrderResource extends Resource
 
                         Select::make('payment_method')
                         ->options([
-                            'transfer' => 'Transfer',
-                            'gopay' => 'Gopay'
+                            'cod' => 'COD',
+                            'transfer' => 'Transfer'
                         ])
                         ->label('Metode Pembayaran')
                         ->required(),
@@ -263,7 +263,7 @@ class OrderResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+            AddressRelationManager::class
         ];
     }
 

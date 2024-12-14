@@ -80,22 +80,19 @@ class OrderResource extends Resource
                         ->options([
                             'new' => 'New',
                             'processing' => 'Processing',
-                            'shipped' => 'Shipped',
                             'delivered' => 'Delivered',
                             'cancelled' => 'Cancelled'
                         ])
                         ->colors([
                             'new' => 'info',
                             'processing' => 'warning',
-                            'shipped' => 'success',
                             'delivered' => 'success',
                             'cancelled' => 'danger'
                         ])
                         ->icons([
                             'new' => 'heroicon-m-sparkles',
                             'processing' => 'heroicon-m-arrow-path',
-                            'shipped' => 'heroicon-m-truck',
-                            'delivered' => 'heroicon-m-check-badge',
+                            'delivered' => 'heroicon-m-truck',
                             'cancelled' => 'heroicon-m-x-circle'
                         ])
                         ->label('Status Paket'),
@@ -226,7 +223,7 @@ class OrderResource extends Resource
                     'new' => 'New',
                     'proses' => 'Processing',
                     'dikirim' => 'Delivered',
-                    'dibatalkan' => 'cancelled',
+                    'dibatalkan' => 'Cancelled',
                 ])
                 ->searchable()
                 ->sortable(),

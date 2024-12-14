@@ -109,8 +109,8 @@ class OrderResource extends Resource
 
                         Select::make('shipping_method')
                         ->options([
-                            'jne' => 'JNE',
-                            'sicepat' => 'Sicepat'
+                            'cod' => 'COD',
+                            'jne' => 'JNE'
                         ]),
 
                         Textarea::make( 'notes')

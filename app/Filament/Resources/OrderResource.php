@@ -224,10 +224,9 @@ class OrderResource extends Resource
                 ->label('Status Pesanan')
                 ->options([
                     'new' => 'New',
-                    'processing' => 'Processing',
-                    'shipped' => 'Shipped',
-                    'delivered' => 'Delivered',
-                    'canceled' => 'cancelled',
+                    'proses' => 'Processing',
+                    'dikirim' => 'Delivered',
+                    'dibatalkan' => 'cancelled',
                 ])
                 ->searchable()
                 ->sortable(),

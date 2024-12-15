@@ -79,9 +79,9 @@ class OrderResource extends Resource
                         ->required()
                         ->options([
                             'new' => 'New',
-                            'processing' => 'Processing',
-                            'delivered' => 'Delivered',
-                            'cancelled' => 'Cancelled'
+                            'proses' => 'Processing',
+                            'dikirim' => 'Delivered',
+                            'dibatalkan' => 'Cancelled'
                         ])
                         ->colors([
                             'new' => 'info',

@@ -81,21 +81,21 @@ class OrderResource extends Resource
                         ->required()
                         ->options([
                             'new' => 'New',
-                            'proses' => 'Processing',
-                            'dikirim' => 'Delivered',
-                            'dibatalkan' => 'Cancelled'
+                            'proses' => 'Diproses',
+                            'dikirim' => 'Dikirim',
+                            'dibatalkan' => 'Dibatalkan'
                         ])
                         ->colors([
                             'new' => 'info',
-                            'processing' => 'warning',
-                            'delivered' => 'success',
-                            'cancelled' => 'danger'
+                            'proses' => 'warning',
+                            'dikirim' => 'success',
+                            'dibatalkan' => 'danger'
                         ])
                         ->icons([
                             'new' => 'heroicon-m-sparkles',
-                            'processing' => 'heroicon-m-arrow-path',
-                            'delivered' => 'heroicon-m-truck',
-                            'cancelled' => 'heroicon-m-x-circle'
+                            'proses' => 'heroicon-m-arrow-path',
+                            'dikirim' => 'heroicon-m-truck',
+                            'dibatalkan' => 'heroicon-m-x-circle'
                         ])
                         ->label('Status Paket'),
 
@@ -223,9 +223,9 @@ class OrderResource extends Resource
                 ->label('Status Pesanan')
                 ->options([
                     'new' => 'New',
-                    'proses' => 'Processing',
-                    'dikirim' => 'Delivered',
-                    'dibatalkan' => 'Cancelled',
+                    'proses' => 'Diproses',
+                    'dikirim' => 'Dikirim',
+                    'dibatalkan' => 'Dibatalkan',
                 ])
                 ->searchable()
                 ->sortable(),

@@ -84,4 +84,16 @@
     </div>
   </div>
   <!-- Kategori End -->
+
+  <!-- Semua Produk -->
+  <div class="bg-white py-20">
+  <div class="max-w-xl mx-auto">
+    <div class="text-center">
+      <div class="relative flex flex-col items-center">
+        <h1 class="text-5xl font-bold dark:text-gray-200 mb-8">Semua Produk</h1>
+      </div>
+    </div>
+  </div>
+  <!-- Semua Produk END -->
+
 </div>

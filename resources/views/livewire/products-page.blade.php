@@ -10,30 +10,15 @@
             <h2 class="text-2xl font-bold dark:text-gray-400">Kategori</h2>
             <div class="w-16 pb-2 mb-6 border-b border-rose-600 dark:border-gray-400"></div>
             <ul>
-              <li class="mb-4">
-                <label for="" class="flex items-center dark:text-gray-400">
-                  <input type="checkbox" class="w-4 h-4 mr-2">
-                  <span class="text-lg">Smartphones</span>
+              @foreach ($categories as $category)
+              <li class="mb-4" wire:key="{{$category->id}}">
+                <label for="{{$category->slug}}" class="flex items-center dark:text-gray-400">
+                  <input type="checkbox" id="{{$category->slug}}" value="{{$category->id}}" class="w-4 h-4 mr-2">
+                  <span class="text-lg">{{$category->name}}</span>
                 </label>
               </li>
-              <li class="mb-4">
-                <label for="" class="flex items-center dark:text-gray-400">
-                  <input type="checkbox" class="w-4 h-4 mr-2">
-                  <span class="text-lg">Laptops</span>
-                </label>
-              </li>
-              <li class="mb-4">
-                <label for="" class="flex items-center dark:text-gray-400">
-                  <input type="checkbox" class="w-4 h-4 mr-2">
-                  <span class="text-lg">Smartwatches</span>
-                </label>
-              </li>
-              <li class="mb-4">
-                <label for="" class="flex items-center dark:text-gray-400">
-                  <input type="checkbox" class="w-4 h-4 mr-2">
-                  <span class="text-lg">Television</span>
-                </label>
-              </li>
+              @endforeach
+
             </ul>
           </div>
 
@@ -88,7 +73,7 @@
             @foreach($products as $product)
               <!-- Products Grid -->
               <div class="flex flex-wrap items-center">
-                <div class="w-full px-3 mb-6 sm:w-1/2 md:w-1/3">
+                <div class="w-full px-3 mb-6 sm:w-1/2 md:w-1/3" wire:key="{{$product->id}}">
                   <div class="border border-gray-300 dark:border-gray-700">
                     <div class="relative bg-gray-200">
                       <a href="/products/{{ $product->slug }}" class="">

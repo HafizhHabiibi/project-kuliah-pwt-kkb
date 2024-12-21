@@ -37,7 +37,7 @@
     <div class="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:justify-center md:items-center md:gap-y-0 md:gap-x-7 md:mt-0">
       <div>
         <a wire:navigate 
-          class="relative inline-block text-black focus:outline-none before:absolute before:bottom-0.5 before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-lime-400 dark:text-white {{ request()->is('/') ? 'text-[#ACCDFF]' : '' }}" 
+          class="relative inline-block {{ request()->is('/') ? 'text-[#ACCDFF]' : 'text-black'}} hover:text-gray-600 focus:outline-none before:absolute before:bottom-0.5 before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-lime-400 dark:text-white" 
           href="/" 
           aria-current="page">
           Home
@@ -45,28 +45,28 @@
       </div>
       <div>
         <a wire:navigate 
-          class="inline-block text-black hover:text-gray-600 focus:outline-none focus:text-gray-600 dark:text-white dark:hover:text-neutral-300 dark:focus:text-neutral-300 {{ request()->is('categories') ? 'text-[#ACCDFF]' : '' }}" 
+          class="inline-block {{ request()->is('categories') ? 'text-[#ACCDFF]' : 'text-black'}} hover:text-gray-600 focus:outline-none focus:text-gray-600 dark:text-white dark:hover:text-neutral-300 dark:focus:text-neutral-300" 
           href="/categories">
           Kategori
         </a>
       </div>
       <div>
         <a wire:navigate 
-          class="inline-block text-black hover:text-gray-600 focus:outline-none focus:text-gray-600 dark:text-white dark:hover:text-neutral-300 dark:focus:text-neutral-300 {{ request()->is('products') ? 'text-[#ACCDFF]' : '' }}" 
+          class="inline-block {{ request()->is('products') ? 'text-[#ACCDFF]' : 'text-black'}} hover:text-gray-600 focus:outline-none focus:text-gray-600 dark:text-white dark:hover:text-neutral-300 dark:focus:text-neutral-300" 
           href="/products">
           Produk
         </a>
       </div>
       <div>
         <a wire:navigate 
-          class="inline-block text-black hover:text-gray-600 focus:outline-none focus:text-gray-600 dark:text-white dark:hover:text-neutral-300 dark:focus:text-neutral-300 {{ request()->is('aboutus') ? 'text-[#ACCDFF]' : '' }}" 
+          class="inline-block {{ request()->is('aboutus') ? 'text-[#ACCDFF]' : 'text-black'}} hover:text-gray-600 focus:outline-none focus:text-gray-600 dark:text-white dark:hover:text-neutral-300 dark:focus:text-neutral-300" 
           href="/aboutus">
           Tentang Kami
         </a>
       </div>
       <div>
         <a wire:navigate 
-          class="inline-block text-black hover:text-gray-600 focus:outline-none focus:text-gray-600 dark:text-white dark:hover:text-neutral-300 dark:focus:text-neutral-300 {{ request()->is('cart') ? 'text-[#ACCDFF]' : '' }}" 
+          class="inline-block {{ request()->is('cart') ? 'text-[#ACCDFF]' : 'text-black'}} hover:text-gray-600 focus:outline-none focus:text-gray-600 dark:text-white dark:hover:text-neutral-300 dark:focus:text-neutral-300" 
           href="/cart">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="inline w-5 h-5 mr-1">
             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />

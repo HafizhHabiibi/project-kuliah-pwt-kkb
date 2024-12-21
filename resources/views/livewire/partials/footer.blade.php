@@ -10,7 +10,7 @@
     <div class="mt-3">
       <p class="text-gray-500 dark:text-neutral-500">Dari Oven Kami ke Meja Anda, Kue Kering Penuh Rasa!</p>
       <p class="text-gray-500 dark:text-neutral-500">
-        © 2024 BlueFizh
+        © 2024 HafizhHabiibi
       </p>
     </div>
 

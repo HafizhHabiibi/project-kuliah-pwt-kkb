@@ -13,7 +13,7 @@
               @foreach ($categories as $category)
               <li class="mb-4" wire:key="{{$category->id}}">
                 <label for="{{$category->slug}}" class="flex items-center dark:text-gray-400">
-                  <input type="checkbox" id="{{$category->slug}}" value="{{$category->id}}" class="w-4 h-4 mr-2">
+                  <input type="checkbox" wire:model.live="pilih_kategori" id="{{$category->slug}}" value="{{$category->id}}" class="w-4 h-4 mr-2">
                   <span class="text-lg">{{$category->name}}</span>
                 </label>
               </li>
@@ -28,15 +28,15 @@
             <div class="w-16 pb-2 mb-6 border-b border-rose-600 dark:border-gray-400"></div>
             <ul>
               <li class="mb-4">
-                <label for="" class="flex items-center dark:text-gray-300">
-                  <input type="checkbox" class="w-4 h-4 mr-2">
-                  <span class="text-lg dark:text-gray-400">Stok Tersedia</span>
+                <label for="featured" class="flex items-center dark:text-gray-300">
+                  <input type="checkbox" id="featured" Wire:model.live="populer" value="1" class="w-4 h-4 mr-2">
+                  <span class="text-lg dark:text-gray-400">Populer</span>
                 </label>
               </li>
               <li class="mb-4">
-                <label for="" class="flex items-center dark:text-gray-300">
-                  <input type="checkbox" class="w-4 h-4 mr-2">
-                  <span class="text-lg dark:text-gray-400">Sedang Dijual</span>
+                <label for="on_sale" class="flex items-center dark:text-gray-300">
+                  <input type="checkbox" id="on_sale" Wire:model.live="penawaran_khusus" value="1" class="w-4 h-4 mr-2">
+                  <span class="text-lg dark:text-gray-400">Penawaran Menarik</span>
                 </label>
               </li>
             </ul>
@@ -44,13 +44,14 @@
 
           <!-- Price Filter -->
           <div class="p-4 mb-5 bg-white border border-gray-200 dark:bg-gray-900 dark:border-gray-900">
-            <h2 class="text-2xl font-bold dark:text-gray-400">Price</h2>
+            <h2 class="text-2xl font-bold dark:text-gray-400">Rentang Harga</h2>
             <div class="w-16 pb-2 mb-6 border-b border-rose-600 dark:border-gray-400"></div>
             <div>
-              <input type="range" class="w-full h-1 mb-4 bg-blue-100 rounded appearance-none cursor-pointer" max="500000" value="100000" step="100000">
+              <div class="font-bold">{{ Number::currency($rentang_harga, 'IDR') }}</div>
+              <input type="range" Wire:model.live="rentang_harga" class="w-full h-1 mb-4 bg-blue-100 rounded appearance-none cursor-pointer" max="50000" value="25000" step="1000">
               <div class="flex justify-between">
-                <span class="inline-block text-lg font-bold text-blue-400">&#8377; 1000</span>
-                <span class="inline-block text-lg font-bold text-blue-400">&#8377; 500000</span>
+                <span class="inline-block text-lg font-bold text-blue-400">{{ Number::currency(2500, 'IDR')}}</span>
+                <span class="inline-block text-lg font-bold text-blue-400">{{ Number::currency(50000, 'IDR')}}</span>
               </div>
             </div>
           </div>

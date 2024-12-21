@@ -63,7 +63,7 @@
       <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         @foreach ($categories as $category)
         <a 
-          href="#" 
+          href="/products?pilih_kategori[0]={{ $category->id }}" 
           wire:key="{{ $category->id }}" 
           class="flex flex-col items-center bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
           style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
@@ -90,7 +90,7 @@
   <div class="max-w-xl mx-auto">
     <div class="text-center">
       <div class="relative flex flex-col items-center">
-        <h1 class="text-5xl font-bold dark:text-gray-200 mb-8">Semua Produk</h1>
+        <h1 class="text-5xl font-bold dark:text-gray-200 mb-8">Populer</h1>
       </div>
     </div>
   </div>

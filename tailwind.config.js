@@ -14,4 +14,3 @@ module.exports = {
     require('preline/plugin'),
   ],
 }
-

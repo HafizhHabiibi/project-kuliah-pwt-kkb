@@ -26,6 +26,9 @@ class ProductsPage extends Component
     #[Url]
     public $rentang_harga = 25000;
 
+    #[Url]
+    public $sort = 'latest';
+
     public function render()
     {
         $productQuery = Product::query()->where('is_active', 1);
@@ -44,6 +47,14 @@ class ProductsPage extends Component
 
         if  ($this->rentang_harga) {
             $productQuery->whereBetween('price', [0, $this->rentang_harga]);
+        }
+
+        if ($this->sort == 'latest') {
+            $productQuery->latest();
+        }
+
+        if ($this->sort == 'price') {
+            $productQuery->orderBy('price');
         }
 
         return view('livewire.products-page', [

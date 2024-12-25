@@ -16,10 +16,10 @@
 
     <!-- Button Group -->
     <div class="flex items-center gap-x-1 md:gap-x-2 ms-auto py-1 md:ps-6 md:order-3 md:col-span-3">
-      <button type="button" class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-xl bg-white border border-[#FFD700] text-[#FFD700] hover:border-[#ACCDFF] hover:text-[#ACCDFF] focus:outline-none disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:hover:bg-white/10 dark:text-white dark:hover:text-white dark:focus:text-white">
+      <button wire:navigate type="button" class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-xl bg-white border border-[#FFD700] text-[#FFD700] hover:border-[#ACCDFF] hover:text-[#ACCDFF] focus:outline-none disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:hover:bg-white/10 dark:text-white dark:hover:text-white dark:focus:text-white" href="/login">
         Masuk
       </button>
-      <button type="button" class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-xl border border-transparent bg-[#ACCDFF] text-black hover:bg-[#FFD700] focus:outline-none transition disabled:opacity-50 disabled:pointer-events-none">
+      <button wire:navigate type="button" class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-xl border border-transparent bg-[#ACCDFF] text-black hover:bg-[#FFD700] focus:outline-none transition disabled:opacity-50 disabled:pointer-events-none" href="/register">
         Daftar
       </button>
 

@@ -28,7 +28,7 @@ class CartManagement {
         }
 
         else {
-            $product = Product::where('id', $product_id)->first(['id', 'name', 'price', 'image']);
+            $product = Product::where('id', $product_id)->first(['id', 'name', 'price', 'images']);
             if ($product) {
                 $cart_items[] = [
                     'product_id' => $product_id,

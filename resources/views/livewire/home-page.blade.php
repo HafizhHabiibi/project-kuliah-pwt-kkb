@@ -85,15 +85,102 @@
   </div>
   <!-- Kategori End -->
 
-  <!-- Semua Produk -->
+  <!-- Keunggulan Kami -->
   <div class="bg-white py-20">
-  <div class="max-w-xl mx-auto">
-    <div class="text-center">
-      <div class="relative flex flex-col items-center">
-        <h1 class="text-5xl font-bold dark:text-gray-200 mb-8">Populer</h1>
+    <div class="max-w-xl mx-auto">
+      <div class="text-center">
+        <div class="relative flex flex-col items-center">
+          <h1 class="text-5xl font-bold dark:text-gray-200 mb-12">Keunggulan Kami</h1>
+        </div>
+      </div>
+    </div>
+
+  <!-- Cards Section -->
+  <div class="flex justify-center items-center bg-white dark:bg-neutral-800 flex-wrap">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <!-- Card 1: Banyak Varian -->
+      <div class="max-w-xs w-full flex flex-col bg-white border border-t-4 border-t-[#ACCDFF] shadow-[0_4px_8px_rgba(0,0,0,0.2)] rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:border-t-blue-500 dark:shadow-neutral-700/70">
+        <div class="p-4 md:p-5 flex flex-col items-center">
+          <!-- Icon -->
+          <div class="mb-3 text-[#ACCDFF]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 20l9-12H3l9 12z" />
+            </svg>
+          </div>
+          <!-- Title -->
+          <h3 class="text-lg font-bold text-gray-800 dark:text-white text-center">
+            Banyak Varian
+          </h3>
+          <!-- Description -->
+          <p class="mt-2 text-gray-500 dark:text-neutral-400 text-center">
+            Toko kami mempunyai lebih dari 500 varian produk yang bermacam-macam, mulai dari roti mini dan jajan pasar hingga spiku dan brownies.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 2: Dibuat dengan Bahan Berkualitas -->
+      <div class="max-w-xs w-full flex flex-col bg-white border border-t-4 border-t-[#ACCDFF] shadow-[0_4px_8px_rgba(0,0,0,0.2)] rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:border-t-blue-500 dark:shadow-neutral-700/70">
+        <div class="p-4 md:p-5 flex flex-col items-center">
+          <!-- Icon -->
+          <div class="mb-3 text-[#ACCDFF]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m-6 6h7"></path>
+            </svg>
+          </div>
+          <!-- Title -->
+          <h3 class="text-lg font-bold text-gray-800 dark:text-white text-center">
+            Dibuat dengan Bahan Berkualitas
+          </h3>
+          <!-- Description -->
+          <p class="mt-2 text-gray-500 dark:text-neutral-400 text-center">
+            Kami menggunakan bahan baku terbaik untuk menjaga cita rasa dan kualitas setiap produk yang dihasilkan.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 3: Harga Bersaing -->
+      <div class="max-w-xs w-full flex flex-col bg-white border border-t-4 border-t-[#ACCDFF] shadow-[0_4px_8px_rgba(0,0,0,0.2)] rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:border-t-blue-500 dark:shadow-neutral-700/70">
+        <div class="p-4 md:p-5 flex flex-col items-center">
+          <!-- Icon -->
+          <div class="mb-3 text-[#ACCDFF]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h11M9 21V3M5 21h8"></path>
+            </svg>
+          </div>
+          <!-- Title -->
+          <h3 class="text-lg font-bold text-gray-800 dark:text-white text-center">
+            Harga Bersaing
+          </h3>
+          <!-- Description -->
+          <p class="mt-2 text-gray-500 dark:text-neutral-400 text-center">
+            Produk kami dijual dengan harga yang bersahabat, cocok untuk segala kalangan.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 4: Dibuat Langsung dengan Tangan -->
+      <div class="max-w-xs w-full flex flex-col bg-white border border-t-4 border-t-[#ACCDFF] shadow-[0_4px_8px_rgba(0,0,0,0.2)] rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:border-t-blue-500 dark:shadow-neutral-700/70">
+        <div class="p-4 md:p-5 flex flex-col items-center">
+          <!-- Icon -->
+          <div class="mb-3 text-[#ACCDFF]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 16h16M4 12h8m-8-4h16"></path>
+            </svg>
+          </div>
+          <!-- Title -->
+          <h3 class="text-lg font-bold text-gray-800 dark:text-white text-center">
+            Dibuat Langsung dengan Tangan
+          </h3>
+          <!-- Description -->
+          <p class="mt-2 text-gray-500 dark:text-neutral-400 text-center">
+            Setiap produk dibuat langsung dengan tangan oleh tenaga ahli, menghasilkan cita rasa yang khas dan berkualitas.
+          </p>
+        </div>
       </div>
     </div>
   </div>
-  <!-- Semua Produk END -->
+  <!-- Card END -->
+
+  <!-- Keunggulan Kami END -->
 
 </div>

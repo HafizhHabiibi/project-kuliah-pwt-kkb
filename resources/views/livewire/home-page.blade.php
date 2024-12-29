@@ -2,30 +2,30 @@
   <!-- Slider -->
   <div>
     <div data-hs-carousel='{
-        "loadingClasses": "opacity-0",
-        "dotsItemClasses": "hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 size-3 border border-gray-400 rounded-full cursor-pointer dark:border-neutral-600 dark:hs-carousel-active:bg-blue-500 dark:hs-carousel-active:border-blue-500",
-        "isAutoPlay": true
-      }' class="relative">
+            "loadingClasses": "opacity-0",
+            "dotsItemClasses": "hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 size-3 border border-gray-400 rounded-full cursor-pointer dark:border-neutral-600 dark:hs-carousel-active:bg-blue-500 dark:hs-carousel-active:border-blue-500",
+            "isAutoPlay": true
+          }' class="relative">
       <div class="hs-carousel relative overflow-hidden w-full min-h-96 bg-white rounded-lg">
         <div class="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
-          <div class="hs-carousel-slide">
-            <div class="flex justify-center h-full bg-gray-100 p-6 dark:bg-neutral-900">
-              <span class="self-center text-4xl text-gray-800 transition duration-700 dark:text-white">First slide</span>
+          @foreach ($sliders as $slider)
+            <div class="hs-carousel-slide">
+              <div class="relative flex justify-center items-center h-full bg-gray-100 dark:bg-neutral-900">
+                <!-- Gambar Slider -->
+                <img src="{{ asset('storage/' . $slider->image_path) }}" alt="{{ $slider->title }}" class="rounded-lg object-cover w-full h-full">
+                
+                <!-- Overlay Title and Subtitle -->
+                <div class="absolute inset-0 flex flex-col justify-center items-center bg-black/50 text-white text-center p-4">
+                  <h2 class="text-3xl font-bold">{{ $slider->title }}</h2>
+                  <p class="mt-2 text-lg">{{ $slider->subtitle }}</p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="hs-carousel-slide">
-            <div class="flex justify-center h-full bg-gray-200 p-6 dark:bg-neutral-800">
-              <span class="self-center text-4xl text-gray-800 transition duration-700 dark:text-white">Second slide</span>
-            </div>
-          </div>
-          <div class="hs-carousel-slide">
-            <div class="flex justify-center h-full bg-gray-300 p-6 dark:bg-neutral-700">
-              <span class="self-center text-4xl text-gray-800 transition duration-700 dark:text-white">Third slide</span>
-            </div>
-          </div>
+          @endforeach
         </div>
       </div>
 
+      <!-- Navigation Buttons -->
       <button type="button" class="hs-carousel-prev hs-carousel-disabled:opacity-50 hs-carousel-disabled:pointer-events-none absolute inset-y-0 start-0 inline-flex justify-center items-center w-[46px] h-full text-gray-800 hover:bg-gray-800/10 focus:outline-none focus:bg-gray-800/10 rounded-s-lg dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10">
         <span class="text-2xl" aria-hidden="true">
           <svg class="shrink-0 size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -43,8 +43,10 @@
         </span>
       </button>
 
+      <!-- Pagination Dots -->
       <div class="hs-carousel-pagination flex justify-center absolute bottom-3 start-0 end-0 space-x-2"></div>
     </div>
+
   </div>
   <!-- End Slider -->
 
@@ -113,7 +115,7 @@
           </h3>
           <!-- Description -->
           <p class="mt-2 text-gray-500 dark:text-neutral-400 text-center">
-            Toko kami mempunyai lebih dari 500 varian produk yang bermacam-macam, mulai dari roti mini dan jajan pasar hingga spiku dan brownies.
+            Toko kami mempunyai varian produk yang bermacam-macam, mulai dari nastar dan putri salju hingga kastengel dan lidah kucing.
           </p>
         </div>
       </div>

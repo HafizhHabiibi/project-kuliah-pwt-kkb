@@ -3,7 +3,7 @@
     <div class="max-w-7xl px-4 lg:px-6 lg:px-8 py-12 lg:py-24 mx-auto">
         <div class="mb-6 sm:mb-10 max-w-2xl text-center mx-auto">
             <h2 class="font-medium text-black text-2xl sm:text-4xl dark:text-white">
-            Contacts
+            Tentang Kami
             </h2>
         </div>
 
@@ -16,7 +16,7 @@
             <div class="space-y-8 lg:space-y-16">
                 <div>
                     <h3 class="mb-5 font-semibold text-black dark:text-white">
-                    Our address
+                    Alamat Kami
                     </h3>
 
                     <!-- Grid -->
@@ -26,11 +26,11 @@
 
                         <div class="grow">
                         <p class="text-sm text-gray-600 dark:text-neutral-400">
-                            United Kingdom
+                            Yogyakarta
                         </p>
                         <address class="mt-1 text-black not-italic dark:text-white">
-                            300 Bath Street, Tay House<br>
-                            Glasgow G2 4JR
+                            Pedukuhan III Sepaten, Kranggan, Galur<br>
+                            Kulon Progo
                         </address>
                         </div>
                     </div>
@@ -40,7 +40,7 @@
 
                 <div>
                     <h3 class="mb-5 font-semibold text-black dark:text-white">
-                    Our contacts
+                    Kontak Kami
                     </h3>
 
                     <!-- Grid -->
@@ -50,11 +50,11 @@
 
                         <div class="grow">
                         <p class="text-sm text-gray-600 dark:text-neutral-400">
-                            Email us
+                            Email
                         </p>
                         <p>
                             <a class="relative inline-block font-medium text-black before:absolute before:bottom-0.5 before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-lime-400 hover:before:bg-black focus:outline-none focus:before:bg-black dark:text-white dark:hover:before:bg-white dark:focus:before:bg-white" href="mailto:example@site.so">
-                            hello@example.so
+                            hafizhhabiibi123@gmail.com
                             </a>
                         </p>
                         </div>
@@ -65,11 +65,11 @@
 
                         <div class="grow">
                         <p class="text-sm text-gray-600 dark:text-neutral-400">
-                            Call us
+                            No Telepon
                         </p>
                         <p>
                             <a class="relative inline-block font-medium text-black before:absolute before:bottom-0.5 before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-lime-400 hover:before:bg-black focus:outline-none focus:before:bg-black dark:text-white dark:hover:before:bg-white dark:focus:before:bg-white" href="mailto:example@site.so">
-                            +44 222 777-000
+                            082136056447
                             </a>
                         </p>
                         </div>

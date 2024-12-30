@@ -50,8 +50,8 @@ Route::middleware('auth')->group(function () {
     });
 
     Route::get('/checkout', CheckoutPage::class);
-    Route::get('/my-order', MyOrdersPage::class);
-    Route::get('/my-order/{order}', MyOrderDetailPage::class);
+    Route::get('/my-order', MyOrdersPage::class)->name('my-orders');
+    Route::get('/my-order/{order}', MyOrderDetailPage::class)->name('my-order.show');
 
     Route::get('/success', SuccessPage::class);
     Route::get('/cancel', CancelPage::class);

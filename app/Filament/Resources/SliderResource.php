@@ -26,6 +26,7 @@ class SliderResource extends Resource
             ->schema([
                 Forms\Components\FileUpload::make('image_path')
                 ->image()
+                ->directory('sliders') //debug tambah directory
                 ->columnSpanFull()
                 ->required(),
                 Forms\Components\TextInput::make('title')
